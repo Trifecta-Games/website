@@ -1,0 +1,191 @@
+/* styles.css — extracted and simplified from embedded styles
+   Purpose: readable, shared stylesheet for the site. Keep visual parity with original. */
+
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #7dd3fc;
+  --muted: #94a3b8;
+  --glass: rgba(255,255,255,0.03);
+}
+
+/* Reset / base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #e6eef6;
+  background: linear-gradient(180deg, #071027 0%, #071122 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header / nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  display: grid;
+  place-items: center;
+  color: #021627;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.hero .intro {
+  flex: 1;
+}
+.hero h2 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Games grid */
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.thumb {
+  height: 140px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass);
+  overflow: hidden;
+}
+.thumb img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+}
+.meta h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.stores {
+  display: flex;
+  gap: 10px;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+}
+.store-btn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 22px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Privacy page helpers */
+.box {
+  max-width: 860px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* Links, small text */
+a {
+  color: var(--accent);
+}
+p {
+  color: #cbd5e1;
+}
+
+header small, header .muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
+}
