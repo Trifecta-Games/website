@@ -1,106 +1,270 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Trafecta Studios — Games</title>
-  <meta name="description" content="Trafecta Studios — Play our mobile games. Links to Google Play and App Store." />
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trifecta Studios - Inspire. Innovate. Play.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/game-card.js"></script>
+    <script src="components/footer.js"></script>
 </head>
-<body>
-  <header>
-    <div class="brand">
-      <div class="logo">TS</div>
-      <div>
-        <h1>Trafecta Studios</h1>
-        <div style="color:var(--muted);font-size:13px">Fun mobile games — small studio</div>
-      </div>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-  </header>
+<body class="bg-gray-900 text-white font-sans">
+    <custom-navbar></custom-navbar>
 
-  <main class="container">
-    <section class="hero">
-      <div class="intro">
-        <h2>Play our games</h2>
-        <p>Tap a game card to view store links. All games are available on Google Play and the App Store where available.</p>
-      </div>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-900 to-gray-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://static.photos/gaming/1200x630/42')] bg-cover bg-center opacity-20"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+                    Trifecta Studios
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in delay-100">
+                Inspire. Innovate. Play.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-200">
+                <a href="#games" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                    Explore Games
+                </a>
+                <a href="#ar-vr" class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">
+                    AR/VR Projects
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-8 h-8"></i>
+        </div>
     </section>
 
-    <section class="games" aria-label="Our games">
-
-      <!-- Game 1 -->
-      <article class="card">
-        <a class="thumb" href="#" aria-label="Open Game One">
-          <!-- Inline SVG placeholder image -->
-          <svg width="100%" height="100%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" fill="#072233" />
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#7dd3fc" font-family="Arial" font-size="28">Game One</text>
-          </svg>
-        </a>
-        <div class="meta">
-          <h3>Game One — Fast Runner</h3>
-          <div style="color:var(--muted);font-size:13px">Endless running with simple controls.</div>
-          <div class="stores">
-            <a class="store-btn" href="#" aria-label="Google Play — Game One">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l20 10-20 10V2z" fill="currentColor"/></svg>
-              Play Store
-            </a>
-            <a class="store-btn" href="#" aria-label="App Store — Game One">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg>
-              App Store
-            </a>
-          </div>
+    <!-- About Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Crafting <span class="text-purple-400">Immersive</span> Experiences
+                    </h2>
+                    <p class="text-lg mb-6 text-gray-300">
+                        Trifecta Studios is an independent game development studio dedicated to pushing the boundaries of interactive entertainment. We blend cutting-edge technology with compelling storytelling to create unforgettable gaming experiences.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-700/50 p-4 rounded-lg">
+                            <i data-feather="code" class="w-8 h-8 text-purple-400 mb-2"></i>
+                            <h3 class="font-bold mb-1">Innovation</h3>
+                            <p class="text-sm text-gray-300">Pushing technical boundaries</p>
+                        </div>
+                        <div class="bg-gray-700/50 p-4 rounded-lg">
+                            <i data-feather="heart" class="w-8 h-8 text-pink-400 mb-2"></i>
+                            <h3 class="font-bold mb-1">Passion</h3>
+                            <p class="text-sm text-gray-300">Games made with love</p>
+                        </div>
+                        <div class="bg-gray-700/50 p-4 rounded-lg">
+                            <i data-feather="users" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                            <h3 class="font-bold mb-1">Community</h3>
+                            <p class="text-sm text-gray-300">Players at our core</p>
+                        </div>
+                        <div class="bg-gray-700/50 p-4 rounded-lg">
+                            <i data-feather="award" class="w-8 h-8 text-yellow-400 mb-2"></i>
+                            <h3 class="font-bold mb-1">Quality</h3>
+                            <p class="text-sm text-gray-300">Polish in every pixel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative aspect-video bg-gray-700 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://static.photos/gaming/1024x576/23" alt="Game development" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Behind the Scenes</h3>
+                                <p class="text-sm text-gray-300">Our team at work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </article>
-
-      <!-- Game 2 -->
-      <article class="card">
-        <a class="thumb" href="#" aria-label="Open Game Two">
-          <svg width="100%" height="100%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" fill="#072233" />
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#7dd3fc" font-family="Arial" font-size="28">Game Two</text>
-          </svg>
-        </a>
-        <div class="meta">
-          <h3>Game Two — Puzzle Saga</h3>
-          <div style="color:var(--muted);font-size:13px">Relaxing puzzles with colourful levels.</div>
-          <div class="stores">
-            <a class="store-btn" href="#" aria-label="Google Play — Game Two">Play Store</a>
-            <a class="store-btn" href="#" aria-label="App Store — Game Two">App Store</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Game 3 -->
-      <article class="card">
-        <a class="thumb" href="#" aria-label="Open Game Three">
-          <svg width="100%" height="100%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" fill="#072233" />
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#7dd3fc" font-family="Arial" font-size="28">Game Three</text>
-          </svg>
-        </a>
-        <div class="meta">
-          <h3>Game Three — Idle Workshop</h3>
-          <div style="color:var(--muted);font-size:13px">Build, upgrade and automate your kingdom.</div>
-          <div class="stores">
-            <a class="store-btn" href="#" aria-label="Google Play — Game Three">Play Store</a>
-            <a class="store-btn" href="#" aria-label="App Store — Game Three">App Store</a>
-          </div>
-        </div>
-      </article>
-
     </section>
 
-    <footer>
-      © Trafecta Studios — <a href="privacy.html" style="color:var(--accent);text-decoration:none">Privacy Policy</a>
-    </footer>
-  </main>
+    <!-- Games Portfolio -->
+    <section id="games" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Our <span class="text-purple-400">Game Portfolio</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-400">
+                    Available now on the Play Store and other platforms
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <custom-game-card 
+                    title="Neon Drift" 
+                    category="Racing" 
+                    image="https://static.photos/gaming/640x360/1"
+                    rating="4.8"
+                    downloads="1M+"
+                    link="#">
+                </custom-game-card>
+                
+                <custom-game-card 
+                    title="Pixel Quest" 
+                    category="Adventure" 
+                    image="https://static.photos/gaming/640x360/2"
+                    rating="4.6"
+                    downloads="500K+"
+                    link="#">
+                </custom-game-card>
+                
+                <custom-game-card 
+                    title="Cosmic Clash" 
+                    category="Strategy" 
+                    image="https://static.photos/gaming/640x360/3"
+                    rating="4.9"
+                    downloads="2M+"
+                    link="#">
+                </custom-game-card>
+                
+                <custom-game-card 
+                    title="Shadow Realm" 
+                    category="RPG" 
+                    image="https://static.photos/gaming/640x360/4"
+                    rating="4.7"
+                    downloads="800K+"
+                    link="#">
+                </custom-game-card>
+                
+                <custom-game-card 
+                    title="AR Explorer" 
+                    category="Augmented Reality" 
+                    image="https://static.photos/technology/640x360/5"
+                    rating="4.5"
+                    downloads="300K+"
+                    link="#">
+                </custom-game-card>
+                
+                <custom-game-card 
+                    title="VR Horizon" 
+                    category="Virtual Reality" 
+                    image="https://static.photos/technology/640x360/6"
+                    rating="4.8"
+                    downloads="150K+"
+                    link="#">
+                </custom-game-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- AR/VR Section -->
+    <section id="ar-vr" class="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 relative">
+                    <div class="relative aspect-square bg-gray-700 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://static.photos/technology/1024x576/7" alt="AR/VR Development" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Immersive Tech</h3>
+                                <p class="text-sm text-gray-300">AR/VR experiences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-600 rounded-full opacity-20 -z-10"></div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Beyond the <span class="text-purple-400">Screen</span>
+                    </h2>
+                    <p class="text-lg mb-6 text-gray-300">
+                        We're pioneering immersive experiences that blend digital and physical worlds through augmented and virtual reality technologies.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 bg-purple-900/30 rounded-full">
+                                <i data-feather="box" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">AR Solutions</h3>
+                                <p class="text-sm text-gray-300">Interactive augmented reality experiences for education, marketing, and entertainment.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 bg-pink-900/30 rounded-full">
+                                <i data-feather="glasses" class="w-6 h-6 text-pink-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">VR Development</h3>
+                                <p class="text-sm text-gray-300">Fully immersive virtual environments for training, gaming, and virtual tourism.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 bg-indigo-900/30 rounded-full">
+                                <i data-feather="cpu" class="w-6 h-6 text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Mixed Reality</h3>
+                                <p class="text-sm text-gray-300">Bridging the gap between AR and VR for seamless digital-physical integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to <span class="text-purple-400">Join</span> the Adventure?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
+                Whether you're a player looking for your next favorite game or a developer wanting to join our team, we'd love to hear from you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/careers" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                    Career Opportunities
+                </a>
+                <a href="#contact" class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+        
+        // Simple animation for elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate-fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animateElements.forEach(el => {
+                el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500');
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
