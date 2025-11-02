@@ -1,6 +1,24 @@
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Careers toggle functionality
+    const careersToggle = document.getElementById('careers-toggle');
+    const careersList = document.getElementById('careers-list');
+    
+    if (careersToggle && careersList) {
+        careersToggle.addEventListener('click', function() {
+            careersList.classList.toggle('hidden');
+            const icon = this.querySelector('i');
+            if (careersList.classList.contains('hidden')) {
+                icon.setAttribute('data-feather', 'chevron-down');
+            } else {
+                icon.setAttribute('data-feather', 'chevron-up');
+            }
+            feather.replace();
+        });
+    }
+
     // Masonry grid adjustments
-    function resizeMasonryItem(item) {
+function resizeMasonryItem(item) {
         const grid = document.querySelector('.masonry-grid');
         if (!grid) return;
         
