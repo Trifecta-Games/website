@@ -1,91 +1,159 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trifecta Studios - Inspire. Innovate. Play.</title>
+    <title>Trifecta Studios | Inspire. Innovate. Play</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="components/navbar.js"></script>
-    <script src="components/game-card.js"></script>
-    <script src="components/footer.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6C63FF',
+                        secondary: '#FF6584',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <custom-navbar></custom-navbar>
-
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-900 to-gray-900 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://static.photos/gaming/1200x630/42')] bg-cover bg-center opacity-20"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-[url('https://static.photos/gaming/1200x630/42')] bg-cover bg-center filter blur-md"></div>
         </div>
-        <div class="container mx-auto px-6 z-10 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <div class="text-center z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
                     Trifecta Studios
                 </span>
             </h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in delay-100">
-                Inspire. Innovate. Play.
+            <p class="text-xl md:text-2xl font-light mb-8">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                    Inspire. Innovate. Play.
+                </span>
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-200">
-                <a href="#games" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
-                    Explore Games
+            <div class="flex gap-4 justify-center">
+                <a href="#portfolio" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">Our Work</a>
+                <a href="#contact" class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">Contact Us</a>
+            </div>
+</div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#about" class="animate-bounce">
+                <i data-feather="chevron-down" class="w-10 h-10"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                            Our Portfolio
+                        </span>
+                    </h2>
+<div class="masonry-grid gap-6">
+                <a href="https://example.com/game1" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/1" alt="Game 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Epic Adventure</h3>
+                                <p class="text-gray-300">Mobile RPG Game</p>
+                            </div>
+                        </div>
+                    </div>
                 </a>
-                <a href="#ar-vr" class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">
-                    AR/VR Projects
+                <a href="https://example.com/game2" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/2" alt="Game 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Space Odyssey</h3>
+                                <p class="text-gray-300">PC Strategy Game</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com/game3" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/3" alt="Game 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">VR Racing</h3>
+                                <p class="text-gray-300">VR Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com/game4" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/4" alt="Game 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Puzzle World</h3>
+                                <p class="text-gray-300">Mobile Puzzle Game</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com/game5" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/5" alt="Game 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Battle Royale</h3>
+                                <p class="text-gray-300">PC Shooter Game</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com/game6" target="_blank" class="masonry-item group">
+                    <div class="relative overflow-hidden rounded-xl h-full">
+                        <img src="https://static.photos/gaming/640x360/6" alt="Game 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">AR Explorer</h3>
+                                <p class="text-gray-300">AR Adventure</p>
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </div>
-        </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i data-feather="chevron-down" class="w-8 h-8"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
+    <section id="about" class="py-20 px-4 md:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <img src="https://static.photos/workspace/640x360/10" alt="Trifecta Studios Team" class="rounded-xl shadow-2xl w-full">
+                </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        Crafting <span class="text-purple-400">Immersive</span> Experiences
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                            About Us
+                        </span>
                     </h2>
-                    <p class="text-lg mb-6 text-gray-300">
-                        Trifecta Studios is an independent game development studio dedicated to pushing the boundaries of interactive entertainment. We blend cutting-edge technology with compelling storytelling to create unforgettable gaming experiences.
-                    </p>
+<p class="text-lg mb-6 text-gray-300">Founded in 2025, Trifecta Studios is a passionate team of game developers, designers, and storytellers dedicated to creating immersive gaming experiences across all platforms.</p>
+                    <p class="text-lg mb-8 text-gray-300">Our mission is to push the boundaries of interactive entertainment while maintaining the core values of fun, creativity, and innovation.</p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="code" class="w-8 h-8 text-purple-400 mb-2"></i>
-                            <h3 class="font-bold mb-1">Innovation</h3>
-                            <p class="text-sm text-gray-300">Pushing technical boundaries</p>
+                            <i data-feather="award" class="w-8 h-8 text-primary mb-2"></i>
+                            <h3 class="font-bold text-lg">Growing Every Day</h3>
+                            <p class="text-gray-400 text-sm">Driven by curiosity and craft</p>
                         </div>
                         <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="heart" class="w-8 h-8 text-pink-400 mb-2"></i>
-                            <h3 class="font-bold mb-1">Passion</h3>
-                            <p class="text-sm text-gray-300">Games made with love</p>
-                        </div>
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="users" class="w-8 h-8 text-indigo-400 mb-2"></i>
-                            <h3 class="font-bold mb-1">Community</h3>
-                            <p class="text-sm text-gray-300">Players at our core</p>
-                        </div>
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="award" class="w-8 h-8 text-yellow-400 mb-2"></i>
-                            <h3 class="font-bold mb-1">Quality</h3>
-                            <p class="text-sm text-gray-300">Polish in every pixel</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-1/2 relative">
-                    <div class="relative aspect-video bg-gray-700 rounded-xl overflow-hidden shadow-2xl">
-                        <img src="https://static.photos/gaming/1024x576/23" alt="Game development" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end p-6">
-                            <div>
-                                <h3 class="text-xl font-bold">Behind the Scenes</h3>
-                                <p class="text-sm text-gray-300">Our team at work</p>
-                            </div>
+                            <i data-feather="users" class="w-8 h-8 text-primary mb-2"></i>
+                            <h3 class="font-bold text-lg">Focused on Quality</h3>
+                            <p class="text-gray-400 text-sm">Not numbers — experiences</p>
                         </div>
                     </div>
                 </div>
@@ -93,178 +161,135 @@
         </div>
     </section>
 
-    <!-- Games Portfolio -->
-    <section id="games" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                    Our <span class="text-purple-400">Game Portfolio</span>
-                </h2>
-                <p class="max-w-2xl mx-auto text-gray-400">
-                    Available now on the Play Store and other platforms
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <custom-game-card 
-                    title="Neon Drift" 
-                    category="Racing" 
-                    image="https://static.photos/gaming/640x360/1"
-                    rating="4.8"
-                    downloads="1M+"
-                    link="#">
-                </custom-game-card>
-                
-                <custom-game-card 
-                    title="Pixel Quest" 
-                    category="Adventure" 
-                    image="https://static.photos/gaming/640x360/2"
-                    rating="4.6"
-                    downloads="500K+"
-                    link="#">
-                </custom-game-card>
-                
-                <custom-game-card 
-                    title="Cosmic Clash" 
-                    category="Strategy" 
-                    image="https://static.photos/gaming/640x360/3"
-                    rating="4.9"
-                    downloads="2M+"
-                    link="#">
-                </custom-game-card>
-                
-                <custom-game-card 
-                    title="Shadow Realm" 
-                    category="RPG" 
-                    image="https://static.photos/gaming/640x360/4"
-                    rating="4.7"
-                    downloads="800K+"
-                    link="#">
-                </custom-game-card>
-                
-                <custom-game-card 
-                    title="AR Explorer" 
-                    category="Augmented Reality" 
-                    image="https://static.photos/technology/640x360/5"
-                    rating="4.5"
-                    downloads="300K+"
-                    link="#">
-                </custom-game-card>
-                
-                <custom-game-card 
-                    title="VR Horizon" 
-                    category="Virtual Reality" 
-                    image="https://static.photos/technology/640x360/6"
-                    rating="4.8"
-                    downloads="150K+"
-                    link="#">
-                </custom-game-card>
+    <!-- Services Section -->
+    <section class="py-20 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                            Our Services
+                        </span>
+                    </h2>
+<div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
+                        <i data-feather="smartphone" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Games</h3>
+                    <p class="text-gray-400">Engaging mobile experiences for iOS and Android with innovative monetization strategies.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
+                        <i data-feather="monitor" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PC Games</h3>
+                    <p class="text-gray-400">High-quality desktop gaming experiences with cutting-edge graphics and gameplay.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
+                        <i data-feather="box" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AR/VR</h3>
+                    <p class="text-gray-400">Immersive augmented and virtual reality experiences that redefine entertainment.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- AR/VR Section -->
-    <section id="ar-vr" class="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2 relative">
-                    <div class="relative aspect-square bg-gray-700 rounded-xl overflow-hidden shadow-2xl">
-                        <img src="https://static.photos/technology/1024x576/7" alt="AR/VR Development" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end p-6">
-                            <div>
-                                <h3 class="text-xl font-bold">Immersive Tech</h3>
-                                <p class="text-sm text-gray-300">AR/VR experiences</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-600 rounded-full opacity-20 -z-10"></div>
-                </div>
+    <!-- Careers CTA -->
+    <section class="py-20 px-4 md:px-8 bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                    Join Our Team
+                </span>
+            </h2>
+<p class="text-xl mb-8 text-gray-300">We're always looking for talented individuals to join our creative family.</p>
+            <a href="mailto:careers@trifectastudios.com" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                View Open Positions
+                <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 md:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-12">
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        Beyond the <span class="text-purple-400">Screen</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                            Get In Touch
+                        </span>
                     </h2>
-                    <p class="text-lg mb-6 text-gray-300">
-                        We're pioneering immersive experiences that blend digital and physical worlds through augmented and virtual reality technologies.
-                    </p>
+<p class="text-lg mb-8 text-gray-300">Have a project in mind? Want to learn more about our services? Drop us a message and we'll get back to you soon.</p>
                     <div class="space-y-4">
-                        <div class="flex items-start gap-4">
-                            <div class="p-2 bg-purple-900/30 rounded-full">
-                                <i data-feather="box" class="w-6 h-6 text-purple-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold mb-1">AR Solutions</h3>
-                                <p class="text-sm text-gray-300">Interactive augmented reality experiences for education, marketing, and entertainment.</p>
-                            </div>
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="w-6 h-6 mr-4 text-primary"></i>
+                            <span>hello@trifectastudios.com</span>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="p-2 bg-pink-900/30 rounded-full">
-                                <i data-feather="glasses" class="w-6 h-6 text-pink-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold mb-1">VR Development</h3>
-                                <p class="text-sm text-gray-300">Fully immersive virtual environments for training, gaming, and virtual tourism.</p>
-                            </div>
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="w-6 h-6 mr-4 text-primary"></i>
+                            <span>+880 1860-066074</span>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="p-2 bg-indigo-900/30 rounded-full">
-                                <i data-feather="cpu" class="w-6 h-6 text-indigo-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold mb-1">Mixed Reality</h3>
-                                <p class="text-sm text-gray-300">Bridging the gap between AR and VR for seamless digital-physical integration.</p>
-                            </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-primary"></i>
+                            <span>Dhaka, Bangladesh</span>
                         </div>
                     </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">Send Message</button>
+</form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Ready to <span class="text-purple-400">Join</span> the Adventure?
-            </h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
-                Whether you're a player looking for your next favorite game or a developer wanting to join our team, we'd love to hear from you.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/careers" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
-                    Career Opportunities
-                </a>
-                <a href="#contact" class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">
-                    Contact Us
-                </a>
+    <!-- Footer -->
+    <footer class="py-12 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
+                    <p class="text-gray-500 mt-2">© 2025 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 flex justify-center">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <custom-footer></custom-footer>
-
+    <script src="script.js"></script>
     <script>
         feather.replace();
-        
-        // Simple animation for elements
-        document.addEventListener('DOMContentLoaded', () => {
-            const animateElements = document.querySelectorAll('.animate-fade-in');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100', 'translate-y-0');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            animateElements.forEach(el => {
-                el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500');
-                observer.observe(el);
-            });
-        });
     </script>
 </body>
 </html>
