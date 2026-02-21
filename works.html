@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trifecta Studios | Inspire. Innovate. Play</title>
+    <title>Our Works | Trifecta Studios</title>
+    <meta name="description"
+        content="Explore the games and interactive experiences created by Trifecta Studios — from mobile RPGs to VR adventures.">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -25,25 +27,25 @@
 
 <body class="bg-gray-900 text-white font-sans">
     <!-- Top Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-scrolled">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center">
                     <img src="logo.png" alt="Trifecta Studios" class="h-10 md:h-12 w-auto">
                 </a>
                 <!-- Desktop Nav Links -->
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="works.html"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Our
+                    <a href="works.html" class="nav-link text-sm font-medium text-white transition-colors relative">Our
                         Games</a>
-                    <a href="#services"
+                    <a href="index.html#services"
                         class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Services</a>
-                    <a href="#about"
+                    <a href="index.html#about"
                         class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">About</a>
-                    <a href="#careers"
+                    <a href="index.html#careers"
                         class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Careers</a>
-                    <a href="#contact"
+                    <a href="index.html#contact"
                         class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Contact</a>
                 </div>
                 <!-- Mobile Hamburger -->
@@ -59,68 +61,42 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5">
             <div class="px-4 py-6 space-y-4">
-                <a href="works.html"
-                    class="block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Our
-                    Games</a>
-                <a href="#services"
+                <a href="works.html" class="block text-base font-medium text-white transition-colors py-2">Our Games</a>
+                <a href="index.html#services"
                     class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Services</a>
-                <a href="#about"
+                <a href="index.html#about"
                     class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">About</a>
-                <a href="#careers"
+                <a href="index.html#careers"
                     class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Careers</a>
-                <a href="#contact"
+                <a href="index.html#contact"
                     class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Page Header -->
     <section
-        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <div
-                class="absolute inset-0 bg-[url('https://static.photos/gaming/1200x630/42')] bg-cover bg-center filter blur-md">
-            </div>
-        </div>
-        <div class="text-center z-10 px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+        class="pt-32 pb-16 px-4 md:px-8 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-                    Trifecta Studios
+                    Our Works
                 </span>
             </h1>
-            <p class="text-xl md:text-2xl font-light mb-8">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Inspire. Innovate. Play.
-                </span>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                From mobile adventures to immersive VR — explore the games and experiences we've crafted with passion.
             </p>
-            <div class="flex gap-4 justify-center">
-                <a href="works.html"
-                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">Our
-                    Games</a>
-                <a href="#contact"
-                    class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">Contact
-                    Us</a>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
-            <a href="#about" class="animate-bounce">
-                <i data-feather="chevron-down" class="w-10 h-10"></i>
-            </a>
         </div>
     </section>
 
-    <!-- Our Games (Featured) -->
-    <section id="games" class="py-20 px-4 md:px-8">
+    <!-- Works Grid -->
+    <section class="py-16 px-4 md:px-8">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Our Games
-                </span>
-            </h2>
-            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Crafted with passion — our mobile games blend
-                addictive gameplay with beautiful design.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Idle Merchant -->
                 <div
                     class="game-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-500 group">
@@ -225,160 +201,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- View All Button -->
-            <div class="text-center mt-12">
-                <a href="works.html"
-                    class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg text-lg">
-                    View All Games
-                    <i data-feather="arrow-right" class="w-5 h-5"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 px-4 md:px-8 bg-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <img src="https://static.photos/workspace/640x360/10" alt="Trifecta Studios Team"
-                        class="rounded-xl shadow-2xl w-full">
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                            About Us
-                        </span>
-                    </h2>
-                    <p class="text-lg mb-6 text-gray-300">Founded in 2025, Trifecta Studios is a passionate team of game
-                        developers, designers, and storytellers dedicated to creating immersive gaming experiences
-                        across all platforms.</p>
-                    <p class="text-lg mb-8 text-gray-300">Our mission is to push the boundaries of interactive
-                        entertainment while maintaining the core values of fun, creativity, and innovation.</p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="award" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Growing Every Day</h3>
-                            <p class="text-gray-400 text-sm">Driven by curiosity and craft</p>
-                        </div>
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="users" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Focused on Quality</h3>
-                            <p class="text-gray-400 text-sm">Not numbers — experiences</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-4 md:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Our Services
-                </span>
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="smartphone" class="w-8 h-8 text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Mobile Games</h3>
-                    <p class="text-gray-400">Engaging mobile experiences for iOS and Android with innovative
-                        monetization strategies.</p>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="monitor" class="w-8 h-8 text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">PC Games</h3>
-                    <p class="text-gray-400">High-quality desktop gaming experiences with cutting-edge graphics and
-                        gameplay.</p>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="box" class="w-8 h-8 text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">AR/VR</h3>
-                    <p class="text-gray-400">Immersive augmented and virtual reality experiences that redefine
-                        entertainment.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Careers CTA -->
-    <section id="careers" class="py-20 px-4 md:px-8 bg-gradient-to-r from-primary/10 to-secondary/10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Join Our Team
-                </span>
-            </h2>
-            <p class="text-xl mb-8 text-gray-300">We're always looking for talented individuals to join our creative
-                family.</p>
-            <a href="careers.html"
-                class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
-                View Open Positions
-                <i data-feather="arrow-right" class="w-5 h-5"></i>
-            </a>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 md:px-8 bg-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                            Get In Touch
-                        </span>
-                    </h2>
-                    <p class="text-lg mb-8 text-gray-300">Have a project in mind? Want to learn more about our services?
-                        Drop us a message and we'll get back to you soon.</p>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i data-feather="mail" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>info.trifectastudios@gmail.com</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-feather="phone" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>+880 1860-066074</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>130-131 Tejkunipara Rd,Tejgaon, Dhaka, Bangladesh</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-1/2">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2">Name</label>
-                            <input type="text" id="name"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-2">Email</label>
-                            <input type="email" id="email"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-2">Message</label>
-                            <textarea id="message" rows="4"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">Send
-                            Message</button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -389,7 +212,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
-                    <p class="text-gray-500 mt-2">© 2025 All Rights Reserved</p>
+                    <p class="text-gray-500 mt-2">&copy; 2025 All Rights Reserved</p>
                 </div>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white transition-colors">

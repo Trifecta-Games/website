@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Trifecta Studios</title>
+    <meta name="description"
+        content="Join Trifecta Studios — explore open positions in game development, design, art, and more.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6C63FF',
+                        secondary: '#FF6584',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Top Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-scrolled">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Trifecta Studios" class="h-10 md:h-12 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="works.html"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Our
+                        Games</a>
+                    <a href="index.html#services"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Services</a>
+                    <a href="index.html#about"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">About</a>
+                    <a href="careers.html"
+                        class="nav-link text-sm font-medium text-white transition-colors relative">Careers</a>
+                    <a href="index.html#contact"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Contact</a>
+                </div>
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5 group">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span
+                        class="hamburger-line block w-4 h-0.5 bg-white rounded transition-all duration-300 group-hover:w-6"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-6 space-y-4">
+                <a href="works.html"
+                    class="block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Our
+                    Games</a>
+                <a href="index.html#services"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Services</a>
+                <a href="index.html#about"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">About</a>
+                <a href="careers.html" class="block text-base font-medium text-white transition-colors py-2">Careers</a>
+                <a href="index.html#contact"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+        class="pt-32 pb-16 px-4 md:px-8 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+                    Join Our Team
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                We're building the future of interactive entertainment. Find your role and help us create unforgettable
+                experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="py-16 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto space-y-6">
+
+            <!-- Role 1 -->
+            <div
+                class="career-card bg-gray-800 rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Unity Developer Trainee</h3>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Remote</span>
+                            <span class="text-sm bg-green-500/20 text-green-500 px-3 py-1 rounded-full">Paid
+                                Internship</span>
+                        </div>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScvlezjTC94EmUpzbir2kxCbfpRtCk-HasSdVI_-O6nGCap5w/viewform?usp=sharing&ouid=101805542367282543895"
+                        class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105 text-center">Apply
+                        Now</a>
+                </div>
+                <div class="mt-4 text-gray-300">
+                    <p>We’re looking for a motivated Unity Developer Intern who wants to gain hands-on experience in
+                        game development.</p>
+                </div>
+            </div>
+
+            <!-- Role 2 -->
+            <div
+                class="career-card bg-gray-800 rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/30 transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Junior-Mid Level Unity Developer</h3>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Hybrid</span>
+                            <span class="text-sm bg-green-500/20 text-green-500 px-3 py-1 rounded-full">BDT 30,000 -
+                                45,000</span>
+                        </div>
+                    </div>
+                    <!-- <a href="mailto:careers@trifectastudios.com?subject=Application for Game Designer"
+                        class="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105 text-center">Apply
+                        Now</a> -->
+                    <p class="text-sm bg-red-500/20 text-red-500 px-3 py-1 rounded-full">Closed</p>
+                </div>
+                <div class="mt-4 text-gray-300">
+                    <p>We are looking for someone responsible for creating, building, maintaining, and optimizing our
+                        games for mobile (iOS and Android) platforms.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- General Application CTA -->
+    <section class="py-16 px-4 md:px-8 bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                    Don't see your role?
+                </span>
+            </h2>
+            <p class="text-gray-300 mb-6">We're always on the lookout for exceptional talent. Send us your portfolio and
+                let's talk.</p>
+            <a href="mailto:info.trifectastudios@gmail.com?subject=General Application"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                <i data-feather="send" class="w-5 h-5"></i>
+                Send Your Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
+                    <p class="text-gray-500 mt-2">&copy; 2025 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 flex justify-center">
+                <a href="privacy.html" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy
+                    Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
