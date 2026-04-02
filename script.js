@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', resizeAllMasonryItems);
 
     // ── Web3Forms Integration (FINAL) ──────────────
-const form = document.getElementById('form');
+  const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
 
 form.addEventListener('submit', async (e) => {
@@ -108,5 +108,7 @@ form.addEventListener('submit', async (e) => {
     } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
+    }
+});
     }
 });
