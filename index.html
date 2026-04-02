@@ -1,430 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- ONLY showing the updated parts clearly — rest of your file stays EXACTLY the same -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trifecta Studios | Inspire. Innovate. Play</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#6C63FF',
-                        secondary: '#FF6584',
-                    }
-                }
-            }
-        }
-    </script>
-</head>
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-4 md:px-8 bg-gray-800">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                        Get In Touch
+                    </span>
+                </h2>
+                <p class="text-lg mb-8 text-gray-300">
+                    Have a project in mind? Want to learn more about our services?
+                    Drop us a message and we'll get back to you soon.
+                </p>
 
-<body class="bg-gray-900 text-white font-sans">
-    <!-- Top Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 md:px-8">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center">
-                    <img src="logo.png" alt="Trifecta Studios" class="h-10 md:h-12 w-auto">
-                </a>
-                <!-- Desktop Nav Links -->
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="works.html"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Our
-                        Games</a>
-                    <a href="#services"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Services</a>
-                    <a href="#about"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">About</a>
-                    <a href="#careers"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Careers</a>
-                    <a href="#contact"
-                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Contact</a>
-                </div>
-                <!-- Mobile Hamburger -->
-                <button id="mobile-menu-btn"
-                    class="md:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5 group">
-                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
-                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
-                    <span
-                        class="hamburger-line block w-4 h-0.5 bg-white rounded transition-all duration-300 group-hover:w-6"></span>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5">
-            <div class="px-4 py-6 space-y-4">
-                <a href="works.html"
-                    class="block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Our
-                    Games</a>
-                <a href="#services"
-                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Services</a>
-                <a href="#about"
-                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">About</a>
-                <a href="#careers"
-                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Careers</a>
-                <a href="#contact"
-                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section
-        class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <div
-                class="absolute inset-0 bg-[url('https://static.photos/gaming/1200x630/42')] bg-cover bg-center filter blur-md">
-            </div>
-        </div>
-        <div class="text-center z-10 px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-                    Trifecta Studios
-                </span>
-            </h1>
-            <p class="text-xl md:text-2xl font-light mb-8">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Inspire. Innovate. Play.
-                </span>
-            </p>
-            <div class="flex gap-4 justify-center">
-                <a href="works.html"
-                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">Our
-                    Games</a>
-                <a href="#contact"
-                    class="px-8 py-3 border-2 border-purple-400 rounded-full font-semibold hover:bg-purple-900/30 transition-all transform hover:scale-105">Contact
-                    Us</a>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
-            <a href="#about" class="animate-bounce">
-                <i data-feather="chevron-down" class="w-10 h-10"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Our Games (Featured) -->
-    <section id="games" class="py-20 px-4 md:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Our Games
-                </span>
-            </h2>
-            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Crafted with passion — our mobile games blend
-                addictive gameplay with beautiful design.</p>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Idle Merchant -->
-                <div
-                    class="game-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-500 group">
-                    <div class="relative overflow-hidden aspect-video">
-                        <img src="idle_merchant.png" alt="Idle Merchant"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent">
-                        </div>
-                        <span
-                            class="absolute top-4 left-4 px-3 py-1 bg-amber-600/90 backdrop-blur-sm text-xs font-bold rounded-full uppercase tracking-wider">Idle
-                            / RPG</span>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i data-feather="mail" class="w-6 h-6 mr-4 text-primary"></i>
+                        <span>info@trifectastudios.io</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Idle Merchant
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Build your dream shop! Serve customers,
-                            protect your shop from waves of enemies, and expand your empire.</p>
-                        <div class="flex gap-3">
-                            <a href="https://play.google.com/store/apps/details?id=com.TrifectaGames.IdleMerchant"
-                                target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg text-sm font-semibold hover:from-green-700 hover:to-emerald-700 transition-all hover:scale-105 shadow-lg shadow-green-900/20">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L16.897 12l3.103-2.49zM5.864 2.658L16.8 9.49l-2.302 2.302-8.634-8.634z" />
-                                </svg>
-                                Play Store
-                            </a>
-                            <a href="https://www.youtube.com/shorts/-Uze3WqnSEw" target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg text-sm font-semibold hover:from-red-700 hover:to-rose-700 transition-all hover:scale-105 shadow-lg shadow-red-900/20">
-                                <i data-feather="youtube" class="w-4 h-4"></i>
-                                Watch Video
-                            </a>
-                        </div>
+                    <div class="flex items-center">
+                        <i data-feather="phone" class="w-6 h-6 mr-4 text-primary"></i>
+                        <span>+880 1860-066074</span>
                     </div>
-                </div>
-
-                <!-- Mars Dozer -->
-                <div
-                    class="game-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-500 group">
-                    <div class="relative overflow-hidden aspect-video">
-                        <img src="mars_dozer.png" alt="Mars Dozer"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent">
-                        </div>
-                        <span
-                            class="absolute top-4 left-4 px-3 py-1 bg-red-600/90 backdrop-blur-sm text-xs font-bold rounded-full uppercase tracking-wider">Simulation</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Mars Dozer</h3>
-                        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Drill, build, and conquer Mars! Mine
-                            resources, expand your colony, and terraform the red planet.</p>
-                        <div class="flex gap-3">
-                            <a href="https://play.google.com/store/apps/details?id=com.TrifectaGames.MarsDozer"
-                                target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg text-sm font-semibold hover:from-green-700 hover:to-emerald-700 transition-all hover:scale-105 shadow-lg shadow-green-900/20">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L16.897 12l3.103-2.49zM5.864 2.658L16.8 9.49l-2.302 2.302-8.634-8.634z" />
-                                </svg>
-                                Play Store
-                            </a>
-                            <a href="https://www.youtube.com/shorts/P0Y9DDMlsBk" target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg text-sm font-semibold hover:from-red-700 hover:to-rose-700 transition-all hover:scale-105 shadow-lg shadow-red-900/20">
-                                <i data-feather="youtube" class="w-4 h-4"></i>
-                                Watch Video
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Idle Basketball Tycoon -->
-                <div
-                    class="game-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-500 group">
-                    <div class="relative overflow-hidden aspect-video">
-                        <img src="basketball_tycoon.png" alt="Idle Basketball Tycoon"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent">
-                        </div>
-                        <span
-                            class="absolute top-4 left-4 px-3 py-1 bg-orange-600/90 backdrop-blur-sm text-xs font-bold rounded-full uppercase tracking-wider">Tycoon</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Idle Basketball
-                            Tycoon</h3>
-                        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Build your dream sports city! Manage
-                            courts, upgrade facilities, and become a basketball tycoon.</p>
-                        <div class="flex gap-3">
-                            <a href="https://play.google.com/store/apps/details?id=com.trifectastudios.basketballtycoon"
-                                target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg text-sm font-semibold hover:from-green-700 hover:to-emerald-700 transition-all hover:scale-105 shadow-lg shadow-green-900/20">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L16.897 12l3.103-2.49zM5.864 2.658L16.8 9.49l-2.302 2.302-8.634-8.634z" />
-                                </svg>
-                                Play Store
-                            </a>
-                            <a href="https://youtube.com/shorts/jv4QCwGUySQ?feature=share" target="_blank"
-                                class="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg text-sm font-semibold hover:from-red-700 hover:to-rose-700 transition-all hover:scale-105 shadow-lg shadow-red-900/20">
-                                <i data-feather="youtube" class="w-4 h-4"></i>
-                                Trailer
-                            </a>
-                        </div>
+                    <div class="flex items-center">
+                        <i data-feather="map-pin" class="w-6 h-6 mr-4 text-primary"></i>
+                        <span>130-131 Tejkunipara Rd,Tejgaon, Dhaka, Bangladesh</span>
                     </div>
                 </div>
             </div>
 
-            <!-- View All Button -->
-            <div class="text-center mt-12">
-                <a href="works.html"
-                    class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg text-lg">
-                    View All Games
-                    <i data-feather="arrow-right" class="w-5 h-5"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+            <div class="md:w-1/2">
+                <form id="form" class="space-y-6">
 
-    <!-- About Section -->
-    <section id="about" class="py-20 px-4 md:px-8 bg-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <img src="https://static.photos/workspace/640x360/10" alt="Trifecta Studios Team"
-                        class="rounded-xl shadow-2xl w-full">
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                            About Us
-                        </span>
-                    </h2>
-                    <p class="text-lg mb-6 text-gray-300">Founded in 2025, Trifecta Studios is a passionate team of game
-                        developers, designers, and storytellers dedicated to creating immersive gaming experiences
-                        across all platforms.</p>
-                    <p class="text-lg mb-8 text-gray-300">Our mission is to push the boundaries of interactive
-                        entertainment while maintaining the core values of fun, creativity, and innovation.</p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="award" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Growing Every Day</h3>
-                            <p class="text-gray-400 text-sm">Driven by curiosity and craft</p>
-                        </div>
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="users" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Focused on Quality</h3>
-                            <p class="text-gray-400 text-sm">Not numbers — experiences</p>
-                        </div>
+                    <div>
+                        <label for="name" class="block mb-2">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-4 md:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Our Services
-                </span>
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="smartphone" class="w-8 h-8 text-primary"></i>
+                    <div>
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Mobile Games</h3>
-                    <p class="text-gray-400">Engaging mobile experiences for iOS and Android with innovative
-                        monetization strategies.</p>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="monitor" class="w-8 h-8 text-primary"></i>
+
+                    <div>
+                        <label for="message" class="block mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">PC Games</h3>
-                    <p class="text-gray-400">High-quality desktop gaming experiences with cutting-edge graphics and
-                        gameplay.</p>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="box" class="w-8 h-8 text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">AR/VR</h3>
-                    <p class="text-gray-400">Immersive augmented and virtual reality experiences that redefine
-                        entertainment.</p>
-                </div>
+
+                    <button type="submit"
+                        class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                        Send Message
+                    </button>
+
+                </form>
             </div>
         </div>
-    </section>
-    <!-- Careers CTA -->
-    <section id="careers" class="py-20 px-4 md:px-8 bg-gradient-to-r from-primary/10 to-secondary/10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Join Our Team
-                </span>
-            </h2>
-            <p class="text-xl mb-8 text-gray-300">We're always looking for talented individuals to join our creative
-                family.</p>
-            <a href="careers.html"
-                class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
-                View Open Positions
-                <i data-feather="arrow-right" class="w-5 h-5"></i>
-            </a>
-        </div>
-    </section>
-    <!-- Contact Section -->
-   <section id="contact" class="py-20 px-4 md:px-8 bg-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                            Get In Touch
-                        </span>
-                    </h2>
-                    <p class="text-lg mb-8 text-gray-300">Have a project in mind? Want to learn more about our services?
-                        Drop us a message and we'll get back to you soon.</p>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i data-feather="mail" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>info@trifectastudios.io</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-feather="phone" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>+880 1860-066074</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-primary"></i>
-                            <span>130-131 Tejkunipara Rd,Tejgaon, Dhaka, Bangladesh</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:w-1/2">
-                   <form id="form" action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="af3bd3f2-c03e-4bac-aa7a-d88cc9906613">
-
-                        <div>
-                            <label for="name" class="block mb-2">Name</label>
-                            <input type="text" name="name" id="name"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-
-                        <div>
-                            <label for="email" class="block mb-2">Email</label>
-                            <input type="email" name="email" id="email"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-
-                        <div>
-                            <label for="message" class="block mb-2">Message</label>
-                            <textarea name="message" id="message" rows="4"
-                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="py-12 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
-                    <p class="text-gray-500 mt-2">© 2025 All Rights Reserved</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-feather="twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-feather="instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-feather="youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 flex justify-center">
-                <a href="privacy.html" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy
-                    Policy</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        feather.replace();
-    </script>
-</body>
-
-</html>
+    </div>
+</section>
