@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     // ── Navbar scroll effect ──────────────────────
     const navbar = document.getElementById('navbar');
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         window.addEventListener('scroll', handleNavbarScroll, { passive: true });
-        handleNavbarScroll(); // run once on load
+        handleNavbarScroll();
     }
 
     // ── Mobile menu toggle ────────────────────────
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenuBtn.classList.toggle('active');
         });
 
-        // Close mobile menu when a link is clicked
         const mobileLinks = mobileMenu.querySelectorAll('.mobile-nav-link');
         mobileLinks.forEach(function (link) {
             link.addEventListener('click', function () {
@@ -72,33 +70,47 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Call initially
     resizeAllMasonryItems();
-
-    // Call on window resize
     window.addEventListener('resize', resizeAllMasonryItems);
 
-    // ── Form submission ───────────────────────────
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
+    // ── Web3Forms Integration (FINAL) ──────────────
+    const form = document.getElementById('form');
+
+    if (form) {
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+            const formData = new FormData(form);
+            formData.append("access_key", "af3bd3f2-c03e-4bac-aa7a-d88cc9906613");
 
-            // Simple validation
-            if (!name || !email || !message) {
-                alert('Please fill in all fields');
-                return;
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = "Sending...";
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert("Success! Your message has been sent.");
+                    form.reset();
+                } else {
+                    alert("Error: " + data.message);
+                }
+
+            } catch (error) {
+                alert("Something went wrong. Please try again.");
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             }
-
-            // In a real scenario, you would send this to a server
-            console.log('Form submitted:', { name, email, message });
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
         });
     }
 });
