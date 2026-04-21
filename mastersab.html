@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Sab | Client Work | Trifecta Studios</title>
+    <meta name="description"
+        content="Master Sab is Bangladesh's first 3D interactive science education platform, built with Trifecta Studios. Serving 45,000+ students across SSC, HSC, and undergraduate levels.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6C63FF',
+                        secondary: '#FF6584',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Top Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-scrolled">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.png" alt="Trifecta Studios" class="h-10 md:h-12 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="works.html" class="nav-link text-sm font-medium text-white transition-colors relative">Our
+                        Games</a>
+                    <a href="index.html#services"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Services</a>
+                    <a href="index.html#about"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">About</a>
+                    <a href="index.html#careers"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Careers</a>
+                    <a href="index.html#contact"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Contact</a>
+                </div>
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5 group">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span
+                        class="hamburger-line block w-4 h-0.5 bg-white rounded transition-all duration-300 group-hover:w-6"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-6 space-y-4">
+                <a href="works.html" class="block text-base font-medium text-white transition-colors py-2">Our Games</a>
+                <a href="index.html#services"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Services</a>
+                <a href="index.html#about"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">About</a>
+                <a href="index.html#careers"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Careers</a>
+                <a href="index.html#contact"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Video Section -->
+    <section class="pt-20 relative overflow-hidden bg-gray-900">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-10 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="max-w-7xl mx-auto px-4 md:px-8 pt-12 pb-6 relative z-10">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+                <a href="works.html" class="hover:text-gray-300 transition-colors">Our Works</a>
+                <i data-feather="chevron-right" class="w-3 h-3"></i>
+                <span class="text-gray-300">Master Sab</span>
+            </div>
+        </div>
+
+        <!-- Video embed -->
+        <div class="max-w-5xl mx-auto px-4 md:px-8 relative z-10 pb-0">
+            <div class="rounded-2xl overflow-hidden border border-purple-500/20 shadow-2xl shadow-purple-900/20 aspect-video">
+                <iframe
+                    src="https://www.youtube.com/embed/LL74XUMF6X4?autoplay=1&mute=1&loop=1&playlist=LL74XUMF6X4&modestbranding=1&rel=0"
+                    title="Master Sab EdTech Demo"
+                    class="w-full h-full"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-16 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Title + Tags -->
+            <div class="mb-10">
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-blue-600/90 text-xs font-bold rounded-full uppercase tracking-wider">EdTech</span>
+                    <span class="px-3 py-1 bg-purple-600/40 text-xs font-semibold rounded-full text-purple-300">3D Simulation</span>
+                    <span class="px-3 py-1 bg-gray-700 text-xs font-semibold rounded-full text-gray-300">Bangladesh</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Master Sab</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">
+                    Bangladesh's first 3D interactive science education platform. It turns abstract concepts into explorable, immersive simulations for the next generation of students.
+                </p>
+            </div>
+
+            <!-- Stats row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+                <div class="bg-gray-800 rounded-xl p-5 border border-gray-700/50 text-center">
+                    <p class="text-3xl font-bold text-purple-400 mb-1">45K+</p>
+                    <p class="text-gray-400 text-sm">Active Students</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-5 border border-gray-700/50 text-center">
+                    <p class="text-3xl font-bold text-purple-400 mb-1">328+</p>
+                    <p class="text-gray-400 text-sm">Instructors</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-5 border border-gray-700/50 text-center">
+                    <p class="text-3xl font-bold text-purple-400 mb-1">3</p>
+                    <p class="text-gray-400 text-sm">Subjects Covered</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-5 border border-gray-700/50 text-center">
+                    <p class="text-3xl font-bold text-purple-400 mb-1">1st</p>
+                    <p class="text-gray-400 text-sm">In Bangladesh</p>
+                </div>
+            </div>
+
+            <!-- Two-column: About + Features -->
+            <div class="grid md:grid-cols-2 gap-10 mb-14">
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-white">About the Project</h2>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Master Sab is a pioneering EdTech platform built to make science education accessible and engaging for Bangladeshi students at the SSC, HSC, and undergraduate levels. Instead of relying on rote memorization, the platform uses 3D visualizations and real-time simulations to bring biology, chemistry, and physics to life.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Trifecta Studios contributed to the platform's interactive 3D experiences and simulation modules, bringing game development craft into the education space.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-white">Key Features</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-gray-300">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
+                            <span><strong class="text-white">3D Visualization</strong>: rotate and explore cells, molecules, and organs in full 3D</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-300">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
+                            <span><strong class="text-white">Interactive Simulations</strong>: chemical reactions, physics principles, and biological processes in real time</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-300">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
+                            <span><strong class="text-white">AI-Powered Problem Solving</strong>: intelligent assistance for tackling scientific challenges</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-300">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
+                            <span><strong class="text-white">MCQ Assessments</strong>: built-in quiz tools for evaluation and exam prep</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-300">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
+                            <span><strong class="text-white">Multi-Platform</strong>: available on smartphones, desktops, and smart boards</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex flex-wrap gap-4 items-center border-t border-gray-800 pt-10">
+                <a href="https://mastersab.com/" target="_blank"
+                    class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl text-sm font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all hover:scale-105 shadow-lg shadow-purple-900/30">
+                    <i data-feather="globe" class="w-4 h-4"></i>
+                    Visit Master Sab
+                </a>
+                <a href="works.html"
+                    class="flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-gray-600 rounded-xl text-sm font-semibold transition-all hover:scale-105">
+                    <i data-feather="arrow-left" class="w-4 h-4"></i>
+                    Back to Works
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
+                    <p class="text-gray-500 mt-2">&copy; 2025 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 flex justify-center">
+                <a href="privacy.html" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

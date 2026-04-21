@@ -73,4 +73,24 @@ document.addEventListener('DOMContentLoaded', function () {
     resizeAllMasonryItems();
     window.addEventListener('resize', resizeAllMasonryItems);
 
-    // ── Web3Forms Integration (FINAL) ──────────────
+    // ── Scroll reveal (IntersectionObserver) ─────
+    const revealEls = document.querySelectorAll('.reveal');
+    if (revealEls.length && 'IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+    } else {
+        // Fallback: show everything immediately
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+    }
+
+});

@@ -117,7 +117,7 @@
                     Our Games
                 </span>
             </h2>
-            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Crafted with passion — our mobile games blend
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Crafted with passion. Our mobile games blend
                 addictive gameplay with beautiful design.</p>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -169,7 +169,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Mars Dozer</h3>
-                        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Pilot a heavy dozer across the Martian surface — drill deep, mine rare resources, and build a thriving colony. Terraform the red planet one excavation at a time.</p>
+                        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Pilot a heavy dozer across the Martian surface. Drill deep, mine rare resources, and build a thriving colony. Terraform the red planet one excavation at a time.</p>
                         <div class="flex gap-3">
                             <a href="https://rimonakhter.itch.io/mars-dozer"
                                 target="_blank"
@@ -236,78 +236,295 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 md:px-8 bg-gray-800">
+    <section id="about" class="py-20 px-4 md:px-8 bg-gray-800 overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <img src="https://static.photos/workspace/640x360/10" alt="Trifecta Studios Team"
-                        class="rounded-xl shadow-2xl w-full">
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                            About Us
-                        </span>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Left: text -->
+                <div class="reveal from-left">
+                    <span class="text-xs font-bold uppercase tracking-widest text-purple-400 mb-3 block">About Us</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-5 leading-tight">
+                        Developers, artists,<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">designers.</span>
                     </h2>
-                    <p class="text-lg mb-6 text-gray-300">Founded in 2025, Trifecta Studios is a passionate team of game
-                        developers, designers, and storytellers dedicated to creating immersive gaming experiences
-                        across all platforms.</p>
-                    <p class="text-lg mb-8 text-gray-300">Our mission is to push the boundaries of interactive
-                        entertainment while maintaining the core values of fun, creativity, and innovation.</p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="award" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Growing Every Day</h3>
-                            <p class="text-gray-400 text-sm">Driven by curiosity and craft</p>
-                        </div>
-                        <div class="bg-gray-700/50 p-4 rounded-lg">
-                            <i data-feather="users" class="w-8 h-8 text-primary mb-2"></i>
-                            <h3 class="font-bold text-lg">Focused on Quality</h3>
-                            <p class="text-gray-400 text-sm">Not numbers — experiences</p>
-                        </div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4">Trifecta Studios is a team of game developers, designers, and storytellers from Dhaka, Bangladesh. We're dedicated to building immersive gaming experiences: the kind that pull you in and don't let go.</p>
+                    <p class="text-gray-400 leading-relaxed mb-8">Founded in 2025, our goal is to push the boundaries of interactive entertainment. Fun, creativity, and innovation aren't just words to us. They're in every mechanic, every frame, and every game we ship.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-gray-700/60 text-gray-300 text-sm rounded-full border border-gray-600/40">Dhaka, Bangladesh</span>
+                        <span class="px-3 py-1.5 bg-gray-700/60 text-gray-300 text-sm rounded-full border border-gray-600/40">Founded 2025</span>
+                        <span class="px-3 py-1.5 bg-gray-700/60 text-gray-300 text-sm rounded-full border border-gray-600/40">iOS & Android</span>
+                        <span class="px-3 py-1.5 bg-gray-700/60 text-gray-300 text-sm rounded-full border border-gray-600/40">Unity</span>
                     </div>
                 </div>
+
+                <!-- Right: creative photo collage -->
+                <div class="reveal from-right">
+                    <div class="grid grid-cols-2 gap-3 h-[420px]">
+
+                        <!-- Tall left image: neon gaming room -->
+                        <div class="relative rounded-2xl overflow-hidden row-span-2 shadow-xl group">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
+                                alt="Gaming setup"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+                        </div>
+
+                        <!-- Top right: controller close-up -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-xl group">
+                            <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=600&q=80"
+                                alt="Game controller"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
+                        </div>
+
+                        <!-- Bottom right: styled stat card -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-xl group bg-gradient-to-br from-purple-900/80 to-indigo-900/80 border border-purple-500/30 flex flex-col items-center justify-center text-center p-5">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80"
+                                alt="Mobile gaming"
+                                class="absolute inset-0 w-full h-full object-cover opacity-20 transition-transform duration-700 group-hover:scale-105">
+                            <div class="relative z-10">
+                                <p class="text-4xl font-bold text-white mb-1">45K+</p>
+                                <p class="text-purple-300 text-sm font-medium">Users across our titles</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-4 md:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                    Our Services
-                </span>
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="smartphone" class="w-8 h-8 text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Mobile Games</h3>
-                    <p class="text-gray-400">Engaging mobile experiences for iOS and Android with innovative
-                        monetization strategies.</p>
+    <section id="services" class="py-24 px-4 md:px-8 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-600/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+
+            <!-- Header -->
+            <div class="text-center mb-14 reveal">
+                <span class="text-xs font-bold uppercase tracking-widest text-purple-400 mb-3 block">What We Build</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Our Services</span>
+                </h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Games are our core. We also build in XR, AI, animation, and visualization.</p>
+            </div>
+
+            <!-- ── HERO: Game Development ───────────────── -->
+            <div class="service-card reveal mb-5 rounded-2xl overflow-hidden border border-purple-500/30 hover:border-purple-400/60 group relative">
+                <div class="absolute inset-0">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1400&q=80"
+                        alt="" class="w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/70"></div>
                 </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="monitor" class="w-8 h-8 text-primary"></i>
+                <div class="h-1 w-full bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 relative"></div>
+                <div class="relative p-7 md:p-8 grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600/40 to-indigo-600/40 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-purple-300" viewBox="0 0 24 24" fill="currentColor"><path d="M17 4H7C3.13 4 0 7.13 0 11v2c0 3.87 3.13 7 7 7h10c3.87 0 7-3.13 7-7v-2c0-3.87-3.13-7-7-7zm-9 8H6v2H4v-2H2v-2h2V8h2v2h2v2zm6.5 1c-.83 0-1.5-.67-1.5-1.5S13.67 10 14.5 10s1.5.67 1.5 1.5S15.33 13 14.5 13zm3 3c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z"/></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-400/70">Core Service</span>
+                                <h3 class="text-xl font-bold text-white leading-tight">Game Development</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">We build mobile and PC games end-to-end, from prototype to live ops. We specialise in hyper-casual and hybrid-casual titles: fast to market, polished, and built to retain. Publisher looking for a studio partner? We handle the full pipeline.</p>
+                        <a href="works.html" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors group/link">
+                            See our games
+                            <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">PC Games</h3>
-                    <p class="text-gray-400">High-quality desktop gaming experiences with cutting-edge graphics and
-                        gameplay.</p>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-8 hover:bg-primary/10 transition-all group">
-                    <div
-                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-all">
-                        <i data-feather="box" class="w-8 h-8 text-primary"></i>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2.5">Platforms</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <div class="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                                <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                <span class="text-xs font-medium text-gray-200">iOS</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                                <svg class="w-3.5 h-3.5 text-green-400" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341c-.551 0-.999-.449-.999-1s.448-.999.999-.999c.551 0 .999.448.999.999s-.448 1-.999 1m-11.046 0c-.551 0-.999-.449-.999-1s.448-.999.999-.999c.551 0 .999.448.999.999s-.448 1-.999 1m11.405-6.02l1.997-3.459a.416.416 0 00-.152-.568.416.416 0 00-.568.152l-2.022 3.503C15.59 8.244 13.853 7.851 12 7.851s-3.59.393-5.137 1.099L4.841 5.447a.416.416 0 00-.568-.152.416.416 0 00-.152.568l1.997 3.459C2.689 11.187.343 14.659 0 18.761h24c-.344-4.102-2.689-7.574-6.118-9.44"/></svg>
+                                <span class="text-xs font-medium text-gray-200">Android</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                                <svg class="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                <span class="text-xs font-medium text-gray-200">PC</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                                <svg class="w-3.5 h-3.5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg>
+                                <span class="text-xs font-medium text-gray-200">WebGL</span>
+                            </div>
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2.5">Genres</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Hyper-casual</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Hybrid-casual</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Idle / Tycoon</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Runner</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Simulation</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">RPG</span>
+                            <span class="px-2.5 py-1 bg-purple-600/20 text-purple-300 text-xs font-semibold rounded-lg border border-purple-500/25">Shooter</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">AR/VR</h3>
-                    <p class="text-gray-400">Immersive augmented and virtual reality experiences that redefine
-                        entertainment.</p>
                 </div>
             </div>
+
+            <!-- ── 3-col row ──────────────────────────────── -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
+
+                <!-- AR / VR & XR -->
+                <div class="service-card reveal reveal-delay-1 bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-cyan-500/40 group">
+                    <div class="relative h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=700&q=80"
+                            alt="VR headset" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-800/20 to-cyan-900/30"></div>
+                        <div class="absolute bottom-3 left-4 w-8 h-8 rounded-lg bg-cyan-500/80 backdrop-blur-sm flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M20.995 6.9a.998.998 0 00-.738-.776C19.709 5.968 16.189 5 12 5s-7.709.968-8.257 1.124a1 1 0 00-.738.776C2.992 6.984 2 12 2 14c0 2.397 1.383 4 3.5 4 1.315 0 2.38-.876 3.179-1.709C9.467 15.445 10.607 15 12 15s2.533.445 3.321 1.291C16.12 17.124 17.185 18 18.5 18c2.117 0 3.5-1.603 3.5-4 0-2-.992-7.016-1.005-7.1zm-8.995 6.1c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-cyan-400/60 uppercase tracking-widest mb-1 block">02</span>
+                        <h3 class="text-base font-bold text-white mb-1.5">AR / VR & XR</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-3">VR games, AR apps, enterprise XR training, and mixed reality experiences for Meta Quest, mobile AR, and beyond.</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 bg-cyan-600/15 text-cyan-300 text-xs rounded border border-cyan-500/20">Virtual Reality</span>
+                            <span class="px-2 py-0.5 bg-cyan-600/15 text-cyan-300 text-xs rounded border border-cyan-500/20">Augmented Reality</span>
+                            <span class="px-2 py-0.5 bg-cyan-600/15 text-cyan-300 text-xs rounded border border-cyan-500/20">XR Simulation</span>
+                            <span class="px-2 py-0.5 bg-cyan-600/15 text-cyan-300 text-xs rounded border border-cyan-500/20">Mixed Reality</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Animation -->
+                <div class="service-card reveal reveal-delay-2 bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-violet-500/40 group">
+                    <div class="relative h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=700&q=80"
+                            alt="3D abstract animation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-800/20 to-violet-900/30"></div>
+                        <div class="absolute bottom-3 left-4 w-8 h-8 rounded-lg bg-violet-500/80 backdrop-blur-sm flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-violet-400/60 uppercase tracking-widest mb-1 block">03</span>
+                        <h3 class="text-base font-bold text-white mb-1.5">3D Animation</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-3">Character animation, game cinematics, trailers, and motion graphics. Crafted to a broadcast standard using industry-standard tools.</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 bg-violet-600/15 text-violet-300 text-xs rounded border border-violet-500/20">Character Animation</span>
+                            <span class="px-2 py-0.5 bg-violet-600/15 text-violet-300 text-xs rounded border border-violet-500/20">Game Trailers</span>
+                            <span class="px-2 py-0.5 bg-violet-600/15 text-violet-300 text-xs rounded border border-violet-500/20">Cinematics</span>
+                            <span class="px-2 py-0.5 bg-violet-600/15 text-violet-300 text-xs rounded border border-violet-500/20">Motion Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-card reveal reveal-delay-3 bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-emerald-500/40 group">
+                    <div class="relative h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80"
+                            alt="Code editor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-800/20 to-emerald-900/30"></div>
+                        <div class="absolute bottom-3 left-4 w-8 h-8 rounded-lg bg-emerald-500/80 backdrop-blur-sm flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-emerald-400/60 uppercase tracking-widest mb-1 block">04</span>
+                        <h3 class="text-base font-bold text-white mb-1.5">Web Development</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-3">Web games, interactive landing pages, game portals, and full-stack web apps. Fast, responsive, and built to convert.</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 bg-emerald-600/15 text-emerald-300 text-xs rounded border border-emerald-500/20">Web Games</span>
+                            <span class="px-2 py-0.5 bg-emerald-600/15 text-emerald-300 text-xs rounded border border-emerald-500/20">Web Apps</span>
+                            <span class="px-2 py-0.5 bg-emerald-600/15 text-emerald-300 text-xs rounded border border-emerald-500/20">Game Portals</span>
+                            <span class="px-2 py-0.5 bg-emerald-600/15 text-emerald-300 text-xs rounded border border-emerald-500/20">Full-stack</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── Bottom row ─────────────────────────────── -->
+            <div class="grid md:grid-cols-2 gap-5 mb-14">
+
+                <!-- Interactive Visualization -->
+                <div class="service-card reveal reveal-delay-1 bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-amber-500/40 group">
+                    <div class="relative h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80"
+                            alt="Data visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-800/20 to-amber-900/30"></div>
+                        <div class="absolute bottom-3 left-4 w-8 h-8 rounded-lg bg-amber-500/80 backdrop-blur-sm flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-amber-400/60 uppercase tracking-widest mb-1 block">05</span>
+                        <h3 class="text-base font-bold text-white mb-1.5">Interactive Visualization</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-3">Real-time 3D for industries that need to show complexity visually: education, healthcare, architecture, and product design.</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 bg-amber-600/15 text-amber-300 text-xs rounded border border-amber-500/20">EdTech Viz</span>
+                            <span class="px-2 py-0.5 bg-amber-600/15 text-amber-300 text-xs rounded border border-amber-500/20">Medical Viz</span>
+                            <span class="px-2 py-0.5 bg-amber-600/15 text-amber-300 text-xs rounded border border-amber-500/20">Architectural Viz</span>
+                            <span class="px-2 py-0.5 bg-amber-600/15 text-amber-300 text-xs rounded border border-amber-500/20">Product Viz</span>
+                            <span class="px-2 py-0.5 bg-amber-600/15 text-amber-300 text-xs rounded border border-amber-500/20">Simulation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Applications -->
+                <div class="service-card reveal reveal-delay-2 bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50 hover:border-pink-500/40 group">
+                    <div class="relative h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+                            alt="AI robot" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 via-gray-800/20 to-pink-900/30"></div>
+                        <div class="absolute bottom-3 left-4 w-8 h-8 rounded-lg bg-pink-500/80 backdrop-blur-sm flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 011 1v2a1 1 0 01-2 0V3a1 1 0 011-1zm0 16a1 1 0 011 1v2a1 1 0 01-2 0v-2a1 1 0 011-1zM4.22 4.22a1 1 0 011.42 0l1.41 1.41a1 1 0 01-1.41 1.42L4.22 5.63a1 1 0 010-1.41zm13.14 13.14a1 1 0 011.42 0l1.41 1.41a1 1 0 01-1.41 1.42l-1.42-1.42a1 1 0 010-1.41zM2 12a1 1 0 011-1h2a1 1 0 010 2H3a1 1 0 01-1-1zm16 0a1 1 0 011-1h2a1 1 0 010 2h-2a1 1 0 01-1-1zM4.22 19.78a1 1 0 010-1.41l1.41-1.42a1 1 0 011.42 1.42L5.63 19.78a1 1 0 01-1.41 0zm13.14-13.14a1 1 0 010-1.41l1.41-1.42a1 1 0 011.42 1.42l-1.42 1.41a1 1 0 01-1.41 0zM12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-pink-400/60 uppercase tracking-widest mb-1 block">06</span>
+                        <h3 class="text-base font-bold text-white mb-1.5">AI Applications</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-3">AI integrated where it actually makes the product better: adaptive difficulty, NPC intelligence, generative content pipelines, and standalone tools.</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 bg-pink-600/15 text-pink-300 text-xs rounded border border-pink-500/20">AI-Powered Apps</span>
+                            <span class="px-2 py-0.5 bg-pink-600/15 text-pink-300 text-xs rounded border border-pink-500/20">Adaptive Game AI</span>
+                            <span class="px-2 py-0.5 bg-pink-600/15 text-pink-300 text-xs rounded border border-pink-500/20">NPC Systems</span>
+                            <span class="px-2 py-0.5 bg-pink-600/15 text-pink-300 text-xs rounded border border-pink-500/20">Generative Content</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── Tools & Technologies Marquee ──────────── -->
+            <div class="border-t border-gray-700/50 pt-10">
+                <p class="text-center text-xs font-bold uppercase tracking-widest text-gray-500 mb-7">Tools &amp; Technologies</p>
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <!-- Set 1 -->
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/unity/ffffff" alt="Unity"><span>Unity</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/unrealengine/ffffff" alt="Unreal Engine"><span>Unreal</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/blender/ffffff" alt="Blender"><span>Blender</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/android/ffffff" alt="Android"><span>Android</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/apple/ffffff" alt="iOS"><span>iOS</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta Quest"><span>Meta Quest</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/figma/ffffff" alt="Figma"><span>Figma</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/firebase/ffffff" alt="Firebase"><span>Firebase</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/steam/ffffff" alt="Steam"><span>Steam</span></div>
+                        <!-- Set 2 (duplicate for seamless loop) -->
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/unity/ffffff" alt="Unity"><span>Unity</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/unrealengine/ffffff" alt="Unreal Engine"><span>Unreal</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/blender/ffffff" alt="Blender"><span>Blender</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/android/ffffff" alt="Android"><span>Android</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/apple/ffffff" alt="iOS"><span>iOS</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta Quest"><span>Meta Quest</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/figma/ffffff" alt="Figma"><span>Figma</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/firebase/ffffff" alt="Firebase"><span>Firebase</span></div>
+                        <div class="tool-item"><img src="https://cdn.simpleicons.org/steam/ffffff" alt="Steam"><span>Steam</span></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Careers CTA -->
