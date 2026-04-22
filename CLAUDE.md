@@ -41,7 +41,7 @@ website/
 | Game | Genre | Play Store ID |
 |------|-------|--------------|
 | Idle Merchant | Idle / RPG | `com.TrifectaGames.IdleMerchant` |
-| Mars Dozer | Simulation | `com.TrifectaGames.MarsDozer` |
+| Mini Strike | Shooter | `rimonakhter.itch.io/mini-strike` |
 | Idle Basketball Tycoon | Tycoon | `com.trifectastudios.basketballtycoon` |
 
 ## Known Issues
