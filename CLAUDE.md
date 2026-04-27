@@ -38,10 +38,10 @@ website/
 
 ## Games
 
-| Game | Genre | Play Store ID |
-|------|-------|--------------|
+| Game | Genre | Play Store ID / URL |
+|------|-------|---------------------|
 | Idle Merchant | Idle / RPG | `com.TrifectaGames.IdleMerchant` |
-| Mini Strike | Shooter | `rimonakhter.itch.io/mini-strike` |
+| Cop Run 3D | Runner | `https://rimonakhter.itch.io/cop-run-3d` |
 | Idle Basketball Tycoon | Tycoon | `com.trifectastudios.basketballtycoon` |
 
 ## Known Issues
