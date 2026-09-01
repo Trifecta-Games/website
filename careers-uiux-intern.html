@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Intern | Trifecta Studios</title>
+    <meta name="description"
+        content="Paid UI/UX Design Internship at Trifecta Studios. Remote or Dhaka, 4-6 months. Design game UI in Figma for shipping mobile titles.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6C63FF',
+                        secondary: '#FF6584',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Top Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-scrolled">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.png" alt="Trifecta Studios" class="h-10 md:h-12 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="works.html"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Our
+                        Games</a>
+                    <a href="index.html#services"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Services</a>
+                    <a href="index.html#about"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">About</a>
+                    <a href="careers.html"
+                        class="nav-link text-sm font-medium text-white transition-colors relative">Careers</a>
+                    <a href="index.html#contact"
+                        class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors relative">Contact</a>
+                </div>
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5 group">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                    <span
+                        class="hamburger-line block w-4 h-0.5 bg-white rounded transition-all duration-300 group-hover:w-6"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-6 space-y-4">
+                <a href="works.html"
+                    class="block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Our
+                    Games</a>
+                <a href="index.html#services"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Services</a>
+                <a href="index.html#about"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">About</a>
+                <a href="careers.html" class="block text-base font-medium text-white transition-colors py-2">Careers</a>
+                <a href="index.html#contact"
+                    class="mobile-nav-link block text-base font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+        class="pt-32 pb-12 px-4 md:px-8 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-10 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <a href="careers.html"
+                class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors mb-6">
+                <i data-feather="arrow-left" class="w-4 h-4"></i>
+                Back to Careers
+            </a>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+                    UI/UX Design Intern
+                </span>
+            </h1>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Remote | Dhaka</span>
+                <span class="text-sm bg-green-500/20 text-green-500 px-3 py-1 rounded-full">Paid</span>
+                <span class="text-sm bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full">4&ndash;6 Months</span>
+                <span class="text-sm bg-yellow-500/20 text-yellow-500 px-3 py-1 rounded-full">Deadline: 12 Sep
+                    2026</span>
+            </div>
+            <p class="text-lg text-gray-300 max-w-3xl">
+                We're looking for a motivated UI/UX Design Intern who wants to gain hands-on experience in game design.
+                This internship is designed for someone who wants to learn, improve their skills, and understand how
+                real game interfaces are designed, tested, and shipped. You'll also get the opportunity to work with
+                some of the top publishers in the world.
+            </p>
+            <a href="https://forms.gle/cHEAubdr2w5w8eUS8" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                <i data-feather="edit-3" class="w-5 h-5"></i>
+                Apply Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Job Description -->
+    <section class="py-12 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto space-y-10">
+
+            <!-- About the Role -->
+            <div class="career-card bg-gray-800 rounded-xl p-6 md:p-8 border border-gray-700/50">
+                <h2 class="text-2xl font-bold mb-4">About the Role</h2>
+                <p class="text-gray-300">
+                    You'll work alongside experienced developers and designers and gradually take on tasks based on your
+                    comfort level. Take a look at some of our work:
+                    <a href="works.html" class="text-primary hover:text-pink-400 transition-colors underline">our
+                        games</a>.
+                </p>
+            </div>
+
+            <!-- What You'll Be Doing -->
+            <div class="career-card bg-gray-800 rounded-xl p-6 md:p-8 border border-gray-700/50">
+                <h2 class="text-2xl font-bold mb-4">What You'll Be Doing</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Designing game UI screens in Figma (shops, upgrades, reward popups, buttons,
+                            settings)</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Helping shape onboarding and tutorial flows</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Preparing and handing off UI assets to our Unity developers</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Creating app store creatives: icons, screenshots, feature graphics</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Learning and researching trending mobile UX patterns, retention, and best practices</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                        <span>Participating in team discussions and feedback sessions</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Requirements -->
+            <div class="career-card bg-gray-800 rounded-xl p-6 md:p-8 border border-gray-700/50">
+                <h2 class="text-2xl font-bold mb-4">Requirements</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Working knowledge of Figma (components, auto-layout, variants)</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Experience with Adobe Illustrator / Photoshop / Affinity / GIMP or similar tools</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Solid understanding of visual hierarchy, spacing, and typography</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Good understanding of mobile-first design &mdash; readability at small sizes, touch
+                            targets, safe areas</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Genuine familiarity with mobile games; able to explain why a specific game's UI works or
+                            doesn't</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Attention to detail and a habit of iterating</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Willingness to learn and improve</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Good communication skills</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="chevron-right"
+                            class="w-5 h-5 text-secondary shrink-0 mt-0.5"></i>
+                        <span>Ability to follow guidance and complete assigned tasks</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Nice to Have -->
+            <div class="career-card bg-gray-800 rounded-xl p-6 md:p-8 border border-gray-700/50">
+                <h2 class="text-2xl font-bold mb-1">Nice to Have</h2>
+                <p class="text-sm text-gray-500 mb-4">Optional &mdash; not required to apply</p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>A portfolio of personal projects, coursework, or redesigns</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>Basic Unity Engine familiarity, 9-slicing</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>Understanding of mobile memory constraints</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>Video editing tools (Premiere Pro, DaVinci Resolve)</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>2D art or illustration ability</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="plus" class="w-5 h-5 text-gray-500 shrink-0 mt-0.5"></i>
+                        <span>Understanding of 3D workflow and 3D/2D AI generation</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- What You'll Gain -->
+            <div
+                class="career-card bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6 md:p-8 border border-purple-500/20">
+                <h2 class="text-2xl font-bold mb-4">What You'll Gain</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex gap-3"><i data-feather="star" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
+                        <span>Practical game UI experience on shipping titles</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="star" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
+                        <span>Exposure to real project workflows</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="star" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
+                        <span>Mentorship and structured feedback</span>
+                    </li>
+                    <li class="flex gap-3"><i data-feather="star" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
+                        <span>Opportunity for a permanent position based on performance</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Apply CTA -->
+    <section class="py-16 px-4 md:px-8 bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                    How to Apply
+                </span>
+            </h2>
+            <p class="text-gray-300 mb-2">Fill out the application form below. Include a portfolio link if you have
+                one.</p>
+            <p class="text-sm text-gray-500 mb-6">Applications close 12th September, 2026.</p>
+            <a href="https://forms.gle/cHEAubdr2w5w8eUS8" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 shadow-lg">
+                <i data-feather="edit-3" class="w-5 h-5"></i>
+                Apply Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Trifecta Studios Ltd.</h2>
+                    <p class="text-gray-500 mt-2">&copy; 2025 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 flex justify-center">
+                <a href="privacy.html" class="text-gray-500 hover:text-white transition-colors text-sm">Privacy
+                    Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
